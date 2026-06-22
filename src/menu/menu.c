@@ -222,6 +222,11 @@ PMenu_Do_Update(edict_t *ent)
 			len += snprintf(string + len, sizeof(string) - len, "string \"%s\" ", t);
 		}
 
+		if (len >= sizeof(string)) {
+			len = sizeof(string) - 1;
+			break;
+		}
+
 		alt = false;
 	}
 
