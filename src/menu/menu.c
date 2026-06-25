@@ -223,7 +223,6 @@ PMenu_Do_Update(edict_t *ent)
 		}
 
 		if (len >= sizeof(string)) {
-			len = sizeof(string) - 1;
 			break;
 		}
 
